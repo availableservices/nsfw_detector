@@ -41,5 +41,5 @@ RUN chmod -R 755 /root/.cache
 
 # 源代码复制放在最后，因为这些文件最容易变化
 COPY app.py config.py processors.py utils.py index.html /app/
-
+EXPOSE 3333
 CMD ["python3", "app.py"]
